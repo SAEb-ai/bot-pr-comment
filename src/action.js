@@ -3,7 +3,7 @@ const github = require('@actions/github');
 const { context } =require('@actions/github')
 const GITHUB_TOKEN = core.getInput('GITHUB_TOKEN');
 const octokit = github.getOctokit(GITHUB_TOKEN);
-console.log(octokit.issues);
+console.log(octokit.rest.issues);
 
 const { pull_request } = context.payload;
 
