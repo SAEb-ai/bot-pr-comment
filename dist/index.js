@@ -8443,7 +8443,8 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 const core = __nccwpck_require__(2186);
-const { github,context} = __nccwpck_require__(5438);
+const github = __nccwpck_require__(5438);
+const { context } =__nccwpck_require__(5438)
 const GITHUB_TOKEN = core.getInput('GITHUB_TOKEN');
 const octokit = github.getOctokit(GITHUB_TOKEN);
 console.log(octokit.issues);
