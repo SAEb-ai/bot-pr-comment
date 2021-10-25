@@ -8,9 +8,12 @@
     "@actions/github": "^5.0.0",
     "@octokit/rest": "^18.12.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@vercel/ncc": "^0.31.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build src/action.js -o dist",
     "dev": "node index.js"
   },
   "repository": {
