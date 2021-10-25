@@ -1,0 +1,21 @@
+{
+  "name": "pro",
+  "version": "1.0.0",
+  "description": "Articles",
+  "main": "index.js",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "@octokit/rest": "^18.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github-ocktokit"
+  },
+  "author": "",
+  "license": "ISC"
+}
