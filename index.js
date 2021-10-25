@@ -1,10 +1,16 @@
 const core = require('@actions/core');
-const { context, GitHub } = require('@actions/github');
-const token = core.getInput('repo-token');
-const octokit = new GitHub(token);
+const github = require('@actions/github');
 
-octokit.issues.createComment({
-    issue_number: 1,
-    body: 'Hi,First program',
-    ...context.repo,
-});
+async function run() {
+    const token = core.getInput('repo-token');
+    const octokit = github.getOctokit(token);
+    const { context = {} } = github;
+    const { pull_request } =context.payload;
+    await octokit.issues.createComment({
+        issue_number: pull_request.number,
+        body: 'Hi,First program',
+        ...context.repo,
+    });
+} 
+
+run();
