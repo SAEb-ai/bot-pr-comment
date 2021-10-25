@@ -7,6 +7,11 @@ on:
     branches:
       - patch-3
 
+inputs:
+  REPO_TOKEN:
+    description: 'Repository token'
+    required: true
+
 jobs:
   frontend:
     runs-on:  ${{ matrix.os }}
