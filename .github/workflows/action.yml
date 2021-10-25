@@ -1,7 +1,11 @@
 name: CI
 on:
+  push:
+    branches:
+      - main
   pull_request:
-    types: [opened,reopened]
+    branches:
+      - patch-3
 
 jobs:
   frontend:
