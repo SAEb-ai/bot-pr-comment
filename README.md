@@ -1,1 +1,2 @@
-# github-ocktokitnh
+# Bot-Pr-Comment
+This is a Github Actions Bot that would comment a thank you message when a Pull Request is opened. The steps involed in creating this app has been explained by Md Shahbaz Alam([@SAEb-ai](https://github.com/SAEb-ai)) in an article named as [How-to-create-a-comment-in-a-pull-request-using-ocktokit.](https://www.geeksforgeeks.org/how-to-create-a-comment-in-a-pull-request-using-ocktokit/)
